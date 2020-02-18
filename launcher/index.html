@@ -11,21 +11,25 @@
     <div class="container p-4">
         <div class="launcher">
             <div class="ln-top">
-                <div class="dots">
-                    <div class="dot red"></div>
-                    <div class="dot orange"></div>
-                    <div class="dot green"></div>
+                <div class="dots" id="open">
+                    <div class="dot" id="red"></div>
+                    <div class="dot" id="orange"></div>
+                    <div class="dot" id="green"></div>
                 </div>
-                <nav>
-                    <button type="button" class="menu-button active">
+                <nav class="menu">
+                    <button type="button" class="menu-button active" id="menu-1">
                         APPLICATION
                     </button>
-                    <form action="/logs" method="post">
-                        <input name="start" value="LOGS" type="button" class="menu-button inactive">
-                    </form>
-                    <form action="/mobile" method="post">
-                        <input name="start" value="MOBILE" type="button" class="menu-button inactive">
-                    </form>
+                    <a href="/logs">
+                        <button type="button" class="menu-button inactive" id="menu-2">
+                            LOG'S
+                        </button>
+                    </a>
+                    <a href="/mobile">
+                        <button type="button" class="menu-button inactive" id="menu-3">
+                            MOBILE
+                        </button>
+                    </a>
                 </nav>
                 <div class="launcher-ver">
                     Version: 7.0.27298
@@ -40,8 +44,8 @@
                     </div>
                 </div>
                 <div class="ln-app-menu">
-                    <div class="ln-app-d">
-                        <a href="#">Start Application (for 32-bit Java)</a>
+                <div class="ln-app-d">
+                    <a href="#">Start Application (for 32-bit Java)</a>
                         |
                         <a href="#">Start Application with launcher</a>
                     </div>

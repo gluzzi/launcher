@@ -81,6 +81,11 @@ img.logo {
 .p-4 {
     padding: 1.5rem !important;
 }
+.menu {
+    position: absolute;
+    right: -125px;
+    width: 100%;
+}
 .menu-button {
     display: block;
     float: left;
@@ -204,6 +209,7 @@ img.logo {
     padding-left: 30px;
     padding-right: 30px;
     height: 80px;
+    cursor: pointer;
     float: left;
 }
 .dots.smart {
@@ -215,22 +221,19 @@ img.logo {
     width: 13px;
     margin-left: 5px;
     border-radius: 100%;
-    background-color: transparent;
+    background-color: #ced3d2;
     transition: all 500ms;
 }
 .dot.red, .dot.green, .dot.orange {
-    background-color: #ced3d2;
+
 }
-.dot.red:hover {
-    opacity: 1;
+.dot.red {
     background-color: #dd3c3c;
 }
-.dot.orange:hover {
-    opacity: 1;
+.dot.orange {
     background-color: #f36c26;
 }
-.dot.green:hover {
-    opacity: 1;
+.dot.green {
     background-color: #67fc4f;
 }
 .dot.smart {

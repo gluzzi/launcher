@@ -1,17 +1,11 @@
-$("#beSmart").click(beSmart);
+$("#menu").click(beSmart);
 function beSmart() {
-    const button = $("#beSmart");
-    const sway =$("#sway");
-    const launcher = $(".container");
-    const ver = $(".launcher-ver");
-    const dot = $(".dot");
-    const dots = $(".dots");
-    const dlinks = $(".ln-app-d");
-    const links = $(".ln-app-l");
+    const container = $(".container");
+    const menu = $(".menu");
 
-    if ($(launcher).css("max-width") === "540px")
+    if ($(container).css("max-width") === "540px")
     {
-        launcher.css("max-width", "1140px");
+        container.css("max-width", "1140px");
         button.text("MOBILE");
         dot.removeClass("smart");
         dots.removeClass("smart");
@@ -21,12 +15,27 @@ function beSmart() {
     }
     else
     {
-        launcher.css("max-width", "540px");
+        container.css("max-width", "540px");
         button.text("PC");
         dot.addClass("smart");
         dots.addClass("smart");
         dlinks.addClass("smart");
         links.addClass("smart");
         sway.addClass("hide");
+    }
+}
+$("#open").click(sway);
+function sway() {
+    const red = $("#red");
+    const orange = $("#orange");
+    const green= $("#green");
+
+    if ($(red).hasClass("red"))
+    {
+        red.removeClass("red")
+    }
+    else
+    {
+        red.addClass("red")
     }
 }
