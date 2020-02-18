@@ -151,7 +151,7 @@ img.logo {
 .ln-logo {
     position: relative;
     width: 100%;
-    height: 650px;
+    height: 80%;
     border-radius: 10px;
     box-shadow: inset 0 0 70px 30px rgba(0,0,0,0.8);
     background-image: url("../img/pic.jpg");
@@ -172,6 +172,11 @@ img.logo {
     transform: translate(-50%, 0%);
     white-space: nowrap;
 }
+.ln-app-d.smart {
+    white-space: pre-line;
+    line-height: 0.8;
+    text-align: center;
+}
 .ln-app-l {
     position: absolute;
     font-size: 14px;
@@ -181,6 +186,9 @@ img.logo {
     transform: translate(-50%, 0%);
     text-align: center;
     white-space: pre-line;
+}
+.ln-app-l.smart {
+    top: 80% !important;
 }
 .ln-footer {
     position: absolute;
@@ -212,6 +220,9 @@ img.logo {
     height: 80px;
     float: left;
 }
+.dots.smart {
+    padding-left: 25px !important;
+}
 .dot {
     display: inline-block;
     height: 13px;
@@ -236,7 +247,10 @@ img.logo {
     opacity: 1;
     background-color: #67fc4f;
 }
-.smart {
+.dot.smart {
     height: 10px !important;
     width: 10px !important;
+}
+.hide {
+    display: none !important;
 }
