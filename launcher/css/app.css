@@ -236,3 +236,7 @@ img.logo {
     opacity: 1;
     background-color: #67fc4f;
 }
+.smart {
+    height: 10px !important;
+    width: 10px !important;
+}
