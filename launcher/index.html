@@ -20,12 +20,12 @@
                     <button type="button" class="menu-button active">
                         APPLICATION
                     </button>
-                    <button type="button" class="menu-button inactive">
-                        LOG'S
-                    </button>
-                    <button type="button" class="menu-button inactive" id="beSmart">
-                        MOBILE
-                    </button>
+                    <form action="/logs" method="post">
+                        <input name="start" value="LOGS" type="button" class="menu-button inactive">
+                    </form>
+                    <form action="/mobile" method="post">
+                        <input name="start" value="MOBILE" type="button" class="menu-button inactive">
+                    </form>
                 </nav>
                 <div class="launcher-ver">
                     Version: 7.0.27298
@@ -38,15 +38,17 @@
                             <input name="start" value="START APPLICATION" type="submit" class="menu-button active">
                         </form>
                     </div>
+                </div>
+                <div class="ln-app-menu">
                     <div class="ln-app-d">
-                        <a class="shadow" href="#">Start Application (for 32-bit Java)</a>
-                        <a id="sway">|</a>
-                        <a class="shadow" href="#">Start Application with launcher</a>
+                        <a href="#">Start Application (for 32-bit Java)</a>
+                        |
+                        <a href="#">Start Application with launcher</a>
                     </div>
                     <div class="ln-app-l">
-                        <a class="shadow" href="http://portal.rdm.com">Customer Support Website</a>
-                        <a class="shadow" href="mailto:rdminteliphy-support@rdm.com">Email the inteliPhy Competence Center</a>
-                        <a class="shadow" href="http://www.rdm.com">Reichle & De-Massari Corporate Website</a>
+                        <a href="http://portal.rdm.com">Customer Support Website</a>
+                        <a href="mailto:rdminteliphy-support@rdm.com">Email the inteliPhy Competence Center</a>
+                        <a href="http://www.rdm.com">Reichle & De-Massari Corporate Website</a>
                     </div>
                 </div>
             </div>
