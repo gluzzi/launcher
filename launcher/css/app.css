@@ -83,8 +83,10 @@ img.logo {
 }
 .menu {
     position: absolute;
-    right: -125px;
-    width: 100%;
+    display: flex;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 0);
 }
 .menu-button {
     display: block;
@@ -98,8 +100,6 @@ img.logo {
     font-size: 26px;
     transition: 0.1s;
     font-family: 'Teko', sans-serif;
-    -webkit-box-shadow: -3px 0 20px -1px #000000;
-    box-shadow: -3px 0 20px -1px #000000;
 }
 .menu-button:active {
     padding: 1.5rem 2rem;
@@ -139,6 +139,7 @@ img.logo {
     color: #fff;
     padding: 1.45rem 2rem;
     font-size: 16px;
+    text-shadow: 2px 2px 5px #000000;
 }
 .ln-top {
     position: absolute;
@@ -165,6 +166,15 @@ img.logo {
     margin-right: -50%;
     transform: translate(-50%, 0%);
 }
+.ln-app-label {
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 0%);
+    font-size: 48px;
+    text-shadow: 0px 0px 20px #000000, 0px 0px 20px #000000, 0px 0px 20px #000000, 0px 0px 20px #000000, 0px 0px 20px #000000;
+}
 .ln-app-menu {
     position: absolute;
     top: 60%;
@@ -174,6 +184,7 @@ img.logo {
     width: 100%;
     font-size: 14px;
     text-align: center;
+    text-shadow: 2px 2px 5px #000000;
 }
 .ln-app-d {
     white-space: nowrap;
@@ -236,10 +247,7 @@ img.logo {
 .dot.green {
     background-color: #67fc4f;
 }
-.dot.smart {
-    height: 10px !important;
-    width: 10px !important;
-}
-.hide {
-    display: none !important;
+.shadow {
+    -webkit-box-shadow: -3px 0 20px -1px #000000;
+    box-shadow: -3px 0 20px -1px #000000;
 }

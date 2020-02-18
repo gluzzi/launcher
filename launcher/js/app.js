@@ -26,16 +26,27 @@ function beSmart() {
 }
 $("#open").click(sway);
 function sway() {
+    var timer;
+    const menu = $(".menu");
     const red = $("#red");
     const orange = $("#orange");
     const green= $("#green");
 
-    if ($(red).hasClass("red"))
-    {
-        red.removeClass("red")
-    }
-    else
-    {
-        red.addClass("red")
-    }
+    clearTimeout(timer);
+    red.addClass("red");
+    timer = setTimeout(function () {
+    red.removeClass("red");
+        orange.addClass("orange");
+        timer = setTimeout(function () {
+        orange.removeClass("orange");
+                green.addClass("green");
+                timer = setTimeout( function () {
+                green.removeClass("green");
+                    green.addClass("green");
+                    timer = setTimeout( function () {
+                    green.removeClass("green");
+                }, 250);
+            }, 250);
+        }, 250);
+    }, 250);
 }
